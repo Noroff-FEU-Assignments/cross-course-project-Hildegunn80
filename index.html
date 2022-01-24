@@ -1,10 +1,87 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My first website</title>
-  </head>
-  <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my first website.</p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/dcfbb8069d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Rainy Days|Home</title>
+</head>
+<body>
+    <header>
+        <section class="flexcontainer">
+            <figure class="flex-item" >
+                <input type="checkbox" id="menu-checkbox"/>
+                <label for="menu-checkbox"><i class="fas fa-bars fa-2x"></i></label>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Jackets</a></li>
+                        <li><a href="#">Check out</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </nav>
+            </figure>
+            <div class="logocontainer">
+                <img src="images/RainyDays_Logo.png">
+            </div>
+            <figure class="flex-item">
+                <i class="fas fa-shopping-basket fa-2x"></i>
+            </figure>
+        </section>
+    </header>
+
+    <main>
+        <div class="flexitem-main-1">
+          <div class="imagecontainer-mobile">
+              <img src="images/Jumping man jacket.jpg" alt="man jumping in a red jacket">
+          </div>
+        </div class="flexitem-main-2">
+            <h1>Pushing the comfort zone</h1>
+        </div>
+    </main>
+
+    <section class="content-container">
+        <div class="flex-item-middle-1">
+          <div class="imagecontainer-mobile">
+              <img src="images/jacob-jolibois-z-_7qjNovHw-unsplash__1_-removebg-preview.jpg">
+              <button class="btn">Explore jackets</button>
+          </div>
+        </div>
+        <div class="flex-item-bottom-1">
+            <h2>Always prepared for a rainy day</h2>
+        </div>
+    </section>
+
+    <section class="content-container">
+        <div class="flex-item-bottom-1">
+          <div class="imagecontainer-mobile">
+              <img src="images/karsten-winegeart-lso2OYK1FqI-unsplash-removebg-preview.jpg">
+              <button class="btn">Explore jackets</button>
+          </div>
+        </div> 
+        <div class="flex-item-bottom-1">
+            <h2>Funny yellow day</h2>
+        </div>
+    </section>
+    
+    <footer>
+        <ul>
+            <div class="flex-item-footer-links1">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </div>
+        </ul>
+
+
+        <ul>
+            <div class="flex-item-footer-icons">
+                <li><i class="fab fa-facebook fa-2x"></i></li>
+                <li><i class="fab fa-instagram-square fa-2x"></i></li>
+            </div>
+        </ul>
+    </footer>
+    
+</body>
 </html>
