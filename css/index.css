@@ -26,6 +26,11 @@ header{
     border-bottom: #2B505A solid 3px;    
 }
 
+
+.searchBox {
+    display: none;
+    margin-top: 25px;    
+}
 .flexcontainer{
     display: flex;
     flex-direction: row;
@@ -45,14 +50,19 @@ header{
 /* styling som gjeld mobilversjonen:både main, content middle og content bottom  */
 .imagecontainer{
     height: auto;
-    width: 300px;
-    border: 1px solid red;
+    width: 600px;
+}
+
+.imagecontainer-mobile {
+    height: auto;
+    width: 200px;
+
 }
 
 .imagecontainer-right{
     height: auto;
     width: 300px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 
     display: flex;
     align-self: flex-end;
@@ -63,13 +73,6 @@ img {
     width: 100%;
     height: 100%;
 }
-
-/*
-.background-image {
-    width: 100%;
-    height: auto;
-}
-*/
 
 .big-font{
     font-size: 50px;
@@ -87,15 +90,28 @@ img {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.content-container .btn {
-  transform: translate(40%, -400%);
+.ExploreButtonLarge {    
+    display: none;
+    margin-left: 250px;
+    margin-bottom: 250px;
+}
+
+.imageOverPicure {
+  transform: translate(-250%, 60%);
+  -ms-transform: translate(-250%, 50%);
+}
+
+.btn {
+  /*
+  transform: translate(40%, -400%);e
   -ms-transform: translate(40%, -400%);
+  */
 
   border-radius: 5px;
   color: rgb(7, 7, 7);
   border: 2px solid rgb(10, 10, 10);
   background-color: rgb(250, 245, 245);
-  padding: 14px 28px;
+  padding: 20px 28px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
@@ -127,13 +143,23 @@ a.button {
 
 /* Styling for main*/
 main{
-    border: solid 2px chocolate;
+    /*border: solid 2px chocolate;*/
+    display: none;
+    width: 100%;
+    padding-bottom: 10px;
+    flex-flow: column;
+    align-items: center;
+}
+
+main-mobile {
+    /*border: solid 2px chocolate;*/
+    /*background-image: url(../images/raindrop.jpg);
+    background-size: 60px;*/
     display: flex;
     width: 100%;
     padding-bottom: 10px;
     flex-flow: column;
     align-items: center;
-
 }
 
 main .btn {
@@ -165,8 +191,24 @@ main .btn {
 }
 
 /* styling for content middle */
+.content-container-top-mobile {
+    display: flex;
+    width: 100%;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .content-container{
     display: flex;
+    width: 100%;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-container-bottom{
+    display: none;
     width: 100%;
     flex-flow: row;
     align-items: center;
@@ -254,11 +296,11 @@ a{
 }
 
 .art-box {
-    display: flex;
-    /*order: 0;*/
     flex-flow: column;
     width: 600px;
+    display: flex;
 }
+
 .art-drop-right {
     background-image: url(../images/raindrop.jpg);
     background-size: 120px;
@@ -288,30 +330,51 @@ a{
     background-position:right;
 }
 
-@media only screen and  (min-width: 600px) {
-
+@media only screen and (min-width: 600px) {
     .logocontainer{
         max-width: 200px;
     }
 
-    .imagecontainer{
-        width: 600px;
-        border: 1px solid rgb(8, 0, 0);
+    .imagecontainer {
+        width: 400px;
+        /*border: 1px solid rgb(8, 0, 0);*/
     }
     .imagecontainer-right{
         width: 600px;
-        border: 1px solid rgb(8, 0, 0);
+        /*border: 1px solid rgb(8, 0, 0);*/
     }
-}
    
-@media only screen and ( min-width:1000px){
-    
-    
     main{
-      
-      flex:1;
+        display: flex;
+        flex:1;
         flex-direction: row;
         justify-content: space-evenly;
-        background-image: url(..images/);    
-    }    
+    }
+    
+    main-mobile {
+        display: none;
+    }
+
+    .ExploreButtonLarge {
+        display: initial;
+    }
+
+    .content-container-bottom{
+        display: flex;
+    }
+
+    .content-container-top-mobile {
+        display: none;        
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .imagecontainer{
+        width: 600px;
+        /*border: 1px solid rgb(8, 0, 0);*/
+    }
+
+    .searchBox {
+        display: initial;
+    }
 }
