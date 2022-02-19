@@ -96,13 +96,14 @@ img{
     width: 50%;
 }
 
-.product-description {
-    background-color: whitesmoke;
-    text-align: left;
-    border: 2px solid gray;
+.product-description a {
+    
+    text-align: center;
     display: block;
     margin-top: 40px;
-    max-width: 300px;
+    font-size: 20px;
+    font-weight: lighter;
+
 }
 
 .addtocart-button{
