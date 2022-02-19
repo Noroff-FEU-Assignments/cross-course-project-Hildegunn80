@@ -50,7 +50,7 @@ header{
 /* styling som gjeld mobilversjonen:både main, content middle og content bottom  */
 .imagecontainer{
     height: auto;
-    width: 600px;
+   
 }
 
 .imagecontainer-mobile {
@@ -64,7 +64,6 @@ header{
     width: 300px;
     /*border: 1px solid red;*/
 
-    display: flex;
     align-self: flex-end;
     margin: 0 auto;
 }
@@ -192,13 +191,23 @@ main .btn {
 
 /* styling for content middle */
 .content-container-top-mobile {
-    display: flex;
+    position: relative;
     width: 100%;
     flex-flow: row;
     align-items: center;
     justify-content: space-between;
 }
 
+.button{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    border: solid 2px black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 .content-container{
     display: flex;
     width: 100%;
