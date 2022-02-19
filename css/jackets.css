@@ -106,20 +106,26 @@ img{
 
 }
 
+
 .addtocart-button{
-    display: block;
+    display: inline;
     font-size: 20px;
-    font-weight: bold;
     background-color: white;
     border: solid 2px gray;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    padding: 3px;
+    right: 50%;
+    padding:10px 50px 10px 50px;
+    margin-left: 10px;
+    max-width: 200px;
 }
 .size-selector{
-    display: block;
-    position: center;
+    display: inline;
+    border: 2px solid gray;
+    background-color: white;
+    font-size: 20px;
+    max-width: 200px;
+    padding: 10px;
+    left: 50%;
+    
 }
 
 
