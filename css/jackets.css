@@ -1,6 +1,6 @@
 body {
     background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Roboto', sans-serif;
     margin: 0 auto;
     max-width: 600px;
     padding: 5px;
@@ -121,17 +121,45 @@ img{
 }
 
 
-.shopping-basket{
+.grid{
     border: solid gray 2px;
     background-color: whitesmoke;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.grid1{
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
-.select-quantity{
-    flex:1;
-    align-self: center;
-}
-.image-container-sb{
+.grid2{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    text-align: left;
+    background-color: rgb(248, 215, 221);
+    font-size: 20px;
+    text-align: center;
+    color: #2B505A;
+    
 
-    width: 50%;
+}
+
+.grid3{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background-color:rgb(248, 215, 221);
+    text-align: center;
+   
+}
+.addtocart-button-2{
+    display: block;
+    font-size: 20px;
+    background-color: white;
+    border: solid 2px gray;
+    position: relative;
+    padding: 3px;
+    margin-top: 5px;
+    position: right;
+    max-width: 150px;
 }
