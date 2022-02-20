@@ -179,3 +179,12 @@ img{
     background-color: rgb(248, 215, 221);
 
 }
+/* styling for check-out page */
+input{
+width: fit-content;
+background-color:whitesmoke;
+box-sizing: border-box;}
+fieldset{
+    background-color: antiquewhite;
+    margin-bottom: 5px;
+}
