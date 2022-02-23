@@ -305,7 +305,10 @@ a{
     padding-left: 50px;
     padding-bottom: 80px;
     padding-right: 80px;
+    border: orange solid 5px;
 }
+
+
 
 .art-box {
     flex-flow: column;
@@ -347,13 +350,14 @@ a{
         max-width: 200px;
     }
 
-    .imagecontainer {
-        max-width: 400px;
-        /*border: 1px solid rgb(8, 0, 0);*/
+    .imagecontainer-2 {
+        flex: 2;
+        display: flex;
+        border: 1px solid rgb(8, 0, 0);
     }
     .imagecontainer-right{
        max-width: 600px;
-        /*border: 1px solid rgb(8, 0, 0);*/
+    border: 1px solid rgb(8, 0, 0);*
     }
    
     main{
@@ -378,6 +382,33 @@ a{
     .content-container-top-mobile {
         display: none;        
     }
+    .content-container{
+        display: flex;
+        flex:1;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .boxed-text-2 {
+        background-image: url(../images/raindrop.jpg);
+        background-size: 200px;
+        background-repeat: no-repeat;
+        padding-top: 90px;
+        padding-left: 50px;
+        padding-bottom: 80px;
+        padding-right: 80px;
+        border: rgb(131, 29, 59) solid 5px;
+        display: flex;
+        order: 2;
+        
+    }
+
+
+
+
+
+
+
 }
 
 @media only screen and (min-width: 1000px) {
@@ -389,4 +420,13 @@ a{
     .searchBox {
         display: initial;
     }
+
+
+    main{
+        display: flex;
+        flex:1;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
 }
