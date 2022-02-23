@@ -55,13 +55,13 @@ header{
 
 .imagecontainer-mobile {
     height: auto;
-    width: 200px;
+    max-width: 200px;
 
 }
 
 .imagecontainer-right{
     height: auto;
-    width: 300px;
+    max-width: 300px;
     /*border: 1px solid red;*/
 
     align-self: flex-end;
@@ -212,7 +212,7 @@ main .btn {
     transform: translate(-50%, -50%);
 }
 .content-container{
-    display: flex;
+    position: relative;
     width: 100%;
     flex-flow: row;
     align-items: center;
