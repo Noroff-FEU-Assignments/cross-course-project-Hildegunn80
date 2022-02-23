@@ -354,10 +354,11 @@ a{
         flex: 2;
         display: flex;
         border: 1px solid rgb(8, 0, 0);
+        max-width: 400px;
     }
     .imagecontainer-right{
        max-width: 600px;
-    border: 1px solid rgb(8, 0, 0);*
+       border: 1px solid rgb(8, 0, 0);
     }
    
     main{
@@ -395,19 +396,16 @@ a{
         background-repeat: no-repeat;
         padding-top: 90px;
         padding-left: 50px;
-        padding-bottom: 80px;
+        padding-bottom: 170px;
         padding-right: 80px;
         border: rgb(131, 29, 59) solid 5px;
         display: flex;
         order: 2;
-        
+        font-weight: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color:#2B505A;
+        line-height: 0%;
     }
-
-
-
-
-
-
 
 }
 
