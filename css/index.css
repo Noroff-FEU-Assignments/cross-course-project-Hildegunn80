@@ -345,6 +345,123 @@ a{
     background-position:right;
 }
 
+
+/*  Styling for jackets-page*/
+.image-container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.product-description a {
+    
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: lighter;
+
+}
+
+
+.addtocart-button{
+    display: block;
+    font-size: 15px;
+    
+    border: solid 2px gray;
+    right: 50%;
+    max-width: 200px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+.size-selector{
+    display: block;
+    border: 2px solid gray;
+    background-color: white;
+    font-size: 20px;
+    max-width: 200px;
+    padding: 10px;
+    left: 50%;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+
+.grid{
+    border: solid gray 2px;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.grid1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.grid2{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    text-align: left;
+    background-color: rgb(248, 215, 221);
+    font-size: 20px;
+    text-align: center;
+    color: #2B505A;
+    
+
+}
+
+.grid3{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background-color:rgb(248, 215, 221);
+    text-align: center;
+   
+}
+.addtocart-button-2{
+    display: block;
+    font-size: 20px;
+    background-color: white;
+    border: solid 2px gray;
+    position: relative;
+    padding: 3px;
+    margin-top: 5px;
+    position: right;
+    max-width: 150px;
+}
+.content{
+    text-align: center;
+    max-width: 600px;
+    background-color: rgb(248, 215, 221);
+
+}
+/* styling for check-out page */
+input{
+width: fit-content;
+background-color:whitesmoke;
+box-sizing: border-box;}
+fieldset{
+    background-color: antiquewhite;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 900px) {
     .logocontainer{
         max-width: 200px;
