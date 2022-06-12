@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/dcfbb8069d.js" crossorigin="anonymous"></script>
+    <title>Rainy Days|Explore Jacket</title>
+</head>
+<body>
+    <header>
+        <section class="flexcontainer">
+            <figure class="flex-item" >
+                <input type="checkbox" id="menu-checkbox"/>
+                <label for="menu-checkbox"><i class="fas fa-bars fa-2x"></i></label>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="jackets.html">Jackets</a></li>
+                        <li><a href="checkout.html">Check out</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </nav>
+            </figure>
+            <div class="logocontainer">
+               <a href="index.html"> <img src="images/RainyDays_Logo.png"></a>
+            </div>
+            <figure class="flex-item">
+                <i class="fas fa-shopping-basket fa-2x"></i>
+            </figure>
+        </section>
+    </header>
+    <main>
+        <div class="page-description">
+           <h1>Check out </h1>
+        </div>
+        <div class="grid">
+        <div class="grid1">
+          <img src="images/west.jpg" alt="yellow winter west">
+          </div>
+
+          <div class="grid2">
+            <h3>Insulated vest</h3>
+            <p>Select quantity</p>
+          </div>
+
+        <div class="grid3">
+            <label for="Quantity">Quantity</label>
+                <select name="Quantity" id="number">
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+                     <option value="6">6</option>
+                     <option value="7">7</option>
+                </select>
+        </div>
+         
+        </div>
+        <div class="addtocart-button-2">
+            <a href="#">Add to basket</a>
+            </div>
+
+
+            <p>Enter payment details</p>
+            <fieldset>
+                <legend>Name</legend>
+                <input type="text" name="firstname">
+                <input type="text" name="lastname">
+             </fieldset>
+             <fieldset>
+                <legend>Credit card</legend>
+                <label for="creditcard">Credit Card Number:</label>
+                 <input id="creditcard" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+                 </fieldset>
+                 <fieldset>
+                     <legend>Expiry date</legend>
+                     <div class="date-field">
+                        <div class="month">
+                          <select name="Month">
+                            <option value="january">January</option>
+                            <option value="february">February</option>
+                            <option value="march">March</option>
+                            <option value="april">April</option>
+                            <option value="may">May</option>
+                            <option value="june">June</option>
+                            <option value="july">July</option>
+                            <option value="august">August</option>
+                            <option value="september">September</option>
+                            <option value="october">October</option>
+                            <option value="november">November</option>
+                            <option value="december">December</option>
+                          </select>
+                        </div>
+                        <div class="year">
+                          <select name="Year">
+                             <option value="2022">2022</option>
+                             <option value="2023">2023</option>
+                             <option value="2024">2024</option>
+                             <option value="2025">2025</option>
+                             <option value="2026">2026</option>
+                             <option value="2027">2027</option>
+                         </select>
+                        </div>
+                       </div>
+                 </fieldset>
+                 <fieldset>
+                 <legend>CCV</legend>
+                 <label for="ccv">CCV</label>
+                 <input id="expirydate" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="4" placeholder="xxxx">
+                </fieldset>
+                <form action="success.html" method="get">
+                    <button>Submit</button>
+                  </form>
+         
+        
+
+    <main>
+
+
+
+    </main>
+        
+    </body>
+
